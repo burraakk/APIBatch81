@@ -1,3 +1,5 @@
+package get_request;
+
 import io.restassured.response.Response;
 import org.junit.Test;
 
@@ -53,7 +55,28 @@ public class Get01 {
         Response response = given().when().get(url);
         response.prettyPrint();
 
+
         //iv) Do Assertion ()dogrulama yapmak
         response.then().assertThat().statusCode(200).contentType("application/json").statusLine("HTTP/1.1 200 OK");
+        //response.then().assertThat().statusCode(200).and().contentType("application/json").and().statusLine("HTTP/1.1 200 OK");
+        //Aralara and() koyarak da yazabiliriz.. Ama kod uzar..
+
+        //Status Code konsola yazdıralım
+        System.out.println("Status Code: " + response.getStatusCode());
+
+        //Content type konsola yazdıralım
+        System.out.println("Content Type: " + response.getContentType());
+
+        //Status Line konsola yazdıralım
+        System.out.println("Status Line: " + response.getStatusLine());
+
+        //Headers konsola yazdıralım
+        System.out.println("\nHeaders:\n" + response.getHeaders());
+
+        //Header konsola yazdıralım
+        System.out.println("\nHeader/Server: " + response.getHeader("Server"));
+
+        //Time konsola yazdıralım
+        System.out.println("Time: " + response.getTime());
     }
 }
