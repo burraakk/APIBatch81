@@ -21,9 +21,9 @@ And
 
     @Test
     public void get01() {
-        //https://restful-booker.herokuapp.com/booking?firstname=Ali&lastname=Cengiz
+        //https://restful-booker.herokuapp.com/booking?firstname=Kimie&lastname=Jackie
         //  Set the URL
-        spec.pathParam("first","booking").queryParams("firstname","Ali","lastname","Cengiz");
+        spec.pathParam("first","booking").queryParams("firstname","Kimie","lastname","Jackie");
 
         //  Expected Data
 
