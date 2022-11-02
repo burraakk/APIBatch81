@@ -11,7 +11,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class get08 extends JsonplaceholderBaseUrl {
+public class Get08 extends JsonplaceholderBaseUrl {
     /*
     Given
        https://jsonplaceholder.typicode.com/todos/2

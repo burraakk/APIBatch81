@@ -7,7 +7,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class get02b extends ReqresBaseUrl {
+public class Get02b extends ReqresBaseUrl {
      /*
    Given
        https://reqres.in/api/users/23
